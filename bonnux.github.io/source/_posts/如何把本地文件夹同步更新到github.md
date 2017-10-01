@@ -22,6 +22,5 @@ File —— Add Local Repository
 
 ![02](/Users/apple/Desktop/hexo/bonnux.github.io/source/_posts/如何把本地文件夹同步更新到github/02.tiff)
 
-然后点一下右上角的Fetch，就可以把文件夹的内容同步到github上了。
+左下角的Summary必须在Fetch前填一下，填完commit即可。
 
-注：左下角的Summary和Description可以在Fetch前填一下，作为更新日志，填完commit即可。
