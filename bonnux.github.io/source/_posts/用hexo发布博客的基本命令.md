@@ -1,17 +1,35 @@
 ---
  title: 用hexo发布博客的基本命令
 ---
-## 1.文章的标题
+## 1.新建文章
 
-把下列代码放在md文件的最开头：
+命令格式如下：
 
 ```
----
- title: 用hexo发布博客的基本命令
----
+hexo new [layout] <title>
 ```
 
-注：title前面要有一个空格。
+例子：
+
+```
+hexo new  post 用hexo发布博客的基本命令
+```
+
+layout有三种选择：
+
+`post`、`page` 和 `draft`
+
+
+
+注：本文的全部命令行都要跳转到博客的文件目录下执行。
+
+如：
+
+```
+cd /xxx/hexo/bonnux.github.io
+```
+
+
 
 ## 2.博客的本地测试(其实这步可以跳过)
 
@@ -24,13 +42,7 @@ hexo s
 启动服务器。默认情况下，访问网址为： 
 [http://localhost:4000/](http://localhost:4000/)
 
-注：要用cd命令跳转到博客的文件目录下执行上述命令行。
 
-如：
-
-```
-cd /xxx/hexo/bonnux.github.io
-```
 
 ## 3.生成静态网页文件并发布
 
@@ -39,6 +51,8 @@ cd /xxx/hexo/bonnux.github.io
 ```
 hexo clean && hexo g && hexo d
 ```
+
+
 
 命令解释：
 
